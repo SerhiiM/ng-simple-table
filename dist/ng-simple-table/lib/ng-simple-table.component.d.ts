@@ -1,0 +1,37 @@
+import { OnInit, EventEmitter } from '@angular/core';
+import { MetaData } from './interfaces';
+export declare class NgSimpleTableComponent implements OnInit {
+    constructor();
+    private _show_pagination;
+    private _columns;
+    private _list;
+    private _sort;
+    private _meta;
+    private _showConformationModal;
+    itemID_for_deleting: any;
+    paginationState: boolean;
+    columns: any[];
+    list: any[];
+    meta: MetaData;
+    pagination: boolean;
+    handleView: EventEmitter<any>;
+    handleEdit: EventEmitter<any>;
+    handleDelete: EventEmitter<any>;
+    handleSorting: EventEmitter<any>;
+    handleTurnPage: EventEmitter<any>;
+    handleSelectRow: EventEmitter<any>;
+    handleToggleCheckBox: EventEmitter<any>;
+    handleChangeItemsPerPage: EventEmitter<any>;
+    sort: any[];
+    showConformationModal: any;
+    ngOnInit(): void;
+    view(row: any): void;
+    edit(row: any): void;
+    delete(row: any): void;
+    sortColumn(column: any, type: any): void;
+    turnPage(index: any): void;
+    selectRow(item: any): void;
+    toggleCheckbox(item: any): void;
+    itemsPerPage(count: any): void;
+    getColumnClass(column: any): "" | "sort-up" | "sort-down";
+}
