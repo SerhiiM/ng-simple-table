@@ -57,9 +57,9 @@ Inputs (Properties)
 
 Outputs (Events)
     
- - handleTurnPage - EventEmitter<number>()
- - handleView - EventEmitter<number>()
- - handleEdit - EventEmitter<number>()
- - handleDelete - EventEmitter<number>()
- - handleSorting - EventEmitter<SortItem>()
- - handleChangeItemsPerPage - EventEmitter<number>()s/bootstrap.css",
+ - handleTurnPage - EventEmitter\<number>()
+ - handleView - EventEmitter\<number>()
+ - handleEdit - EventEmitter\<number>()
+ - handleDelete - EventEmitter\<number>()
+ - handleSorting - EventEmitter\<SortItem>()
+ - handleChangeItemsPerPage - EventEmitter\<number>()
