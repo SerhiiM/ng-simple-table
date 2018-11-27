@@ -48,9 +48,11 @@
   </div>
 </div>
 
-<div class="alert-modal choice-modal" *ngIf="showConformationModal">
-  <p>{{'operation-modal.question'}}?</p>
-  <button class="btn-accept" (click)="this.handleDelete.emit(itemID_for_deleting); showConformationModal = false">Yes</button>
-  <button class="btn-cancel" (click)="itemID_for_deleting = null; showConformationModal = false">No</button>
+<div *ngIf="showConformationModal">
   <div class="overlay"></div>
+  <div class="choice-modal">
+    <p>Are you sure?</p>
+    <button class="btn-accept" (click)="this.handleDelete.emit(itemID_for_deleting); showConformationModal = false">Yes</button>
+    <button class="btn-cancel" (click)="itemID_for_deleting = null; showConformationModal = false">No</button>
+  </div>
 </div>

@@ -1,10 +1,14 @@
+<h4 style="margin: 20px;">Cars table</h4>
 <smt-ng-simple-table
-  [columns]="[
-    {titleKey:'Manufacture Name', withSorting: true, rowKey: 'manufacturer_name'},
-    {titleKey:'Model Name', withSorting: true, rowKey: 'name'},
-    {titleKey:'Action', withSorting: false, rowKey: '', withActionCol: true}
-  ]"
+  [columns]="columns"
   [list]="list"
+  [meta]="meta"
+  (handleTurnPage)="turnPage($event)"
+  (handleView)="startView($event)"
+  (handleEdit)="startEditing($event)"
+  (handleDelete)="handleDelete($event)"
+  (handleSorting)="sortList($event)"
+  (handleChangeItemsPerPage)="changeItemsPerPage($event)"
 >
 </smt-ng-simple-table>
 
