@@ -17,11 +17,9 @@ In root
 
 In template
 
----
-
+```javascript
 <smt-ng-simple-table></smt-ng-simple-table>
-
----
+```
 
 Interfaces
 

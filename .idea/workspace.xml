@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="22384b89-dbe6-41d3-9f95-1df5a347f1fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects/ng-simple-table/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/projects/ng-simple-table/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -56,7 +57,7 @@
         <counts>
           <entry key="html" value="87" />
           <entry key="json" value="22" />
-          <entry key="md" value="468" />
+          <entry key="md" value="469" />
           <entry key="scss" value="42" />
           <entry key="ts" value="93" />
         </counts>
@@ -65,7 +66,7 @@
         <counts>
           <entry key="HTML" value="87" />
           <entry key="JSON" value="22" />
-          <entry key="Markdown" value="468" />
+          <entry key="Markdown" value="469" />
           <entry key="SCSS" value="42" />
           <entry key="TypeScript" value="93" />
         </counts>
@@ -95,12 +96,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projects/ng-simple-table/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="526">
-                <caret line="56" column="18" lean-forward="true" selection-end-line="67" selection-end-column="52" />
+              <first_editor relative-caret-position="296">
+                <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               </first_editor>
               <second_editor />
             </state>
@@ -125,12 +126,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1147">
-                <caret line="67" column="52" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
+              <first_editor relative-caret-position="69">
+                <caret line="19" selection-start-line="19" selection-end-line="21" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -162,10 +163,10 @@
         <option value="$PROJECT_DIR$/projects/ng-simple-table/src/lib/ng-simple-table.component.html" />
         <option value="$PROJECT_DIR$/projects/ng-simple-table/src/lib/ng-simple-table.component.scss" />
         <option value="$PROJECT_DIR$/projects/ng-simple-table/src/lib/interfaces.ts" />
-        <option value="$PROJECT_DIR$/projects/ng-simple-table/README.md" />
         <option value="$PROJECT_DIR$/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/projects/ng-simple-table/README.md" />
       </list>
     </option>
   </component>
@@ -299,12 +300,12 @@
       <option name="presentableId" value="Default" />
       <updated>1543247061236</updated>
       <workItem from="1543247062328" duration="8197000" />
-      <workItem from="1543327314848" duration="5139000" />
+      <workItem from="1543327314848" duration="5252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13336000" />
+    <option name="totallyTimeSpent" value="13449000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1080" extended-state="6" />
@@ -468,21 +469,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/ng-simple-table/README.md">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="526">
-            <caret line="56" column="18" lean-forward="true" selection-end-line="67" selection-end-column="52" />
+          <first_editor relative-caret-position="69">
+            <caret line="19" selection-start-line="19" selection-end-line="21" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/projects/ng-simple-table/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1147">
-            <caret line="67" column="52" selection-start-line="67" selection-start-column="52" selection-end-line="67" selection-end-column="52" />
+          <first_editor relative-caret-position="296">
+            <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           </first_editor>
           <second_editor />
         </state>
