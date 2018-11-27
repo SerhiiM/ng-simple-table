@@ -5,8 +5,8 @@
       <th *ngFor="let column of columns" class="{{column.withSorting ? '':'no-sort'}}" width="{{column.width ? column.width:'auto'}}" [ngClass]="getColumnClass(column)">
         {{ column.titleKey }}
         <div *ngIf="column.withSorting" class="sorting-btn-block">
-          <button class="sort-btn" (click)="sortColumn(column, 1)"><i class="fa fa-sort-up"></i></button>
-          <button class="sort-btn" (click)="sortColumn(column, 0)"><i class="fa fa-sort-down"></i></button>
+          <button class="btn btn-sm" (click)="sortColumn(column, 1)"><i class="fa fa-sort-up"></i></button>
+          <button class="btn btn-sm" (click)="sortColumn(column, 0)"><i class="fa fa-sort-down"></i></button>
         </div>
       </th>
     </tr>
@@ -15,10 +15,10 @@
     <tr *ngFor="let row of list">
       <td *ngFor="let column of columns">
         <div (click)="selectRow(row)">{{column.rowKey && row[column.rowKey]}}</div>
-        <div class="action-btns-block" *ngIf="column.withActionCol">
-          <button (click)="view(row)" class="btn btn-view"><i class="fa fa-search"></i></button>
-          <button (click)="edit(row)" class="btn btn-edit"><i class="fa fa-edit"></i></button>
-          <button (click)="delete(row)" *ngIf="!column.hideDeleteBtn" class="btn btn-delete"><i class="fa fa-trash"></i></button>
+        <div class="visible-md visible-lg no-wrap" *ngIf="column.withActionCol">
+          <button (click)="view(row)" class="btn btn-sm btn-green"><i class="fa fa-search"></i></button>
+          <button (click)="edit(row)" class="btn btn-sm btn-blue"><i class="fa fa-edit"></i></button>
+          <button (click)="delete(row)" *ngIf="!column.hideDeleteBtn" class="btn btn-sm btn-red"><i class="fa fa-trash"></i></button>
         </div>
         <div *ngIf="column.withSelectionCol">
           <input type="checkbox" (change)="toggleCheckbox(row)" [disabled]="row.checkbox_disabled" [checked]="row.checkbox_checked"/>

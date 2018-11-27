@@ -4,7 +4,7 @@ import { MetaData } from './interfaces';
 @Component({
   selector: 'smt-ng-simple-table',
   templateUrl: './ng-simple-table.component.html',
-  styleUrls: ['./ng-simple-table.component.scss']
+  styleUrls: ['./ng-simple-table.component.scss', './buttons.scss']
 })
 export class NgSimpleTableComponent implements OnInit {
 

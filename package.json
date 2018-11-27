@@ -8,7 +8,6 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "copy-license": "copy .\\LICENSE .\\dist\\ng-simple-table",
     "copy-readme": "copy .\\README.md .\\dist\\ng-simple-table",
     "copy-files": "npm run copy-license && npm run copy-readme",
     "build_lib": "ng build ng-simple-table",
