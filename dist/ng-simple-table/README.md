@@ -1,6 +1,6 @@
 # ng-simple-table
 
-For now u have to install font-awesome and bootstrap
+For now u have to install font-awesome
 
 `npm install font-awesome --save`
 

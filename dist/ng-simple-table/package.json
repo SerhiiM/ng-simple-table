@@ -1,6 +1,6 @@
 {
   "name": "ng-simple-table",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "This is a simple table with CRUD actions, pagination and sorting.",
   "keywords": [
     "Angular",

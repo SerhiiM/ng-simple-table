@@ -2,32 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22384b89-dbe6-41d3-9f95-1df5a347f1fe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/ng-simple-table/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ng-simple-table/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/ng-simple-table/bundles/ng-simple-table.umd.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ng-simple-table/bundles/ng-simple-table.umd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/ng-simple-table/bundles/ng-simple-table.umd.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ng-simple-table/bundles/ng-simple-table.umd.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/ng-simple-table/bundles/ng-simple-table.umd.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ng-simple-table/bundles/ng-simple-table.umd.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/ng-simple-table/bundles/ng-simple-table.umd.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ng-simple-table/bundles/ng-simple-table.umd.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/ng-simple-table/esm2015/lib/ng-simple-table.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ng-simple-table/esm2015/lib/ng-simple-table.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/ng-simple-table/esm5/lib/ng-simple-table.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ng-simple-table/esm5/lib/ng-simple-table.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/ng-simple-table/fesm2015/ng-simple-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ng-simple-table/fesm2015/ng-simple-table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/ng-simple-table/fesm2015/ng-simple-table.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ng-simple-table/fesm2015/ng-simple-table.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/ng-simple-table/fesm5/ng-simple-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ng-simple-table/fesm5/ng-simple-table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/ng-simple-table/fesm5/ng-simple-table.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ng-simple-table/fesm5/ng-simple-table.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/ng-simple-table/lib/ng-simple-table.component.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ng-simple-table/lib/ng-simple-table.component.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/ng-simple-table/ng-simple-table.metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ng-simple-table/ng-simple-table.metadata.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/ng-simple-table/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/ng-simple-table/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/ng-simple-table/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/projects/ng-simple-table/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/projects/ng-simple-table/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/projects/ng-simple-table/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/ng-simple-table/src/lib/buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/ng-simple-table/src/lib/ng-simple-table.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects/ng-simple-table/src/lib/ng-simple-table.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/ng-simple-table/src/lib/ng-simple-table.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/projects/ng-simple-table/src/lib/ng-simple-table.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projects/ng-simple-table/src/lib/ng-simple-table.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/projects/ng-simple-table/src/lib/ng-simple-table.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/demo-screen.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo-screen.png" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -50,11 +29,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="LICENSE" value="1" />
           <entry key="css" value="3" />
-          <entry key="gitignore" value="1" />
+          <entry key="gitignore" value="2" />
           <entry key="html" value="7" />
-          <entry key="json" value="20" />
-          <entry key="md" value="16" />
+          <entry key="json" value="21" />
+          <entry key="md" value="17" />
+          <entry key="png" value="1" />
           <entry key="scss" value="9" />
           <entry key="ts" value="11" />
         </counts>
@@ -63,9 +44,10 @@
         <counts>
           <entry key="CSS" value="3" />
           <entry key="HTML" value="7" />
-          <entry key="JSON" value="20" />
-          <entry key="Markdown" value="16" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Image" value="1" />
+          <entry key="JSON" value="21" />
+          <entry key="Markdown" value="17" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="SCSS" value="9" />
           <entry key="TypeScript" value="11" />
         </counts>
@@ -79,8 +61,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="LICENSE" value="14" />
+          <entry key="gitignore" value="1" />
           <entry key="html" value="213" />
-          <entry key="json" value="23" />
+          <entry key="json" value="73" />
           <entry key="md" value="550" />
           <entry key="scss" value="385" />
           <entry key="ts" value="151" />
@@ -89,8 +73,9 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="213" />
-          <entry key="JSON" value="23" />
+          <entry key="JSON" value="73" />
           <entry key="Markdown" value="550" />
+          <entry key="PLAIN_TEXT" value="15" />
           <entry key="SCSS" value="385" />
           <entry key="TypeScript" value="151" />
         </counts>
@@ -99,98 +84,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="138">
-                <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/app.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="40" column="14" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/ng-simple-table/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="46">
-                <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
-              <folding>
-                <element signature="n#!!block;n#ng-simple-table-app-e2e#0;n#!!block;n#projects#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/app/app.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="41" lean-forward="true" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#smt-ng-simple-table#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projects/ng-simple-table/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            <state relative-caret-position="207">
+              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/ng-simple-table/src/lib/ng-simple-table.component.ts">
+        <entry file="file://$PROJECT_DIR$/projects/ng-simple-table/src/LICENSE">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-371">
-              <caret line="140" column="39" lean-forward="true" selection-start-line="140" selection-start-column="39" selection-end-line="140" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#78#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="483">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/ng-simple-table/src/lib/ng-simple-table.component.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projects/ng-simple-table/src/lib/ng-simple-table.component.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="81" column="1" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="1" />
+            <state relative-caret-position="392">
+              <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -238,9 +154,11 @@
         <option value="$PROJECT_DIR$/projects/ng-simple-table/src/lib/ng-simple-table.component.scss" />
         <option value="$PROJECT_DIR$/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/projects/ng-simple-table/package.json" />
         <option value="$PROJECT_DIR$/projects/ng-simple-table/README.md" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/projects/ng-simple-table/package.json" />
+        <option value="$PROJECT_DIR$/projects/ng-simple-table/src/LICENSE" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -296,14 +214,6 @@
               <item name="projects" type="462c0819:PsiDirectoryNode" />
               <item name="ng-simple-table" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ng-simple-table" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ng-simple-table" type="462c0819:PsiDirectoryNode" />
-              <item name="projects" type="462c0819:PsiDirectoryNode" />
-              <item name="ng-simple-table" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ng-simple-table" type="b2602c69:ProjectViewProjectNode" />
@@ -408,12 +318,12 @@
       <updated>1543247061236</updated>
       <workItem from="1543247062328" duration="8197000" />
       <workItem from="1543327314848" duration="6194000" />
-      <workItem from="1543389877277" duration="13956000" />
+      <workItem from="1543389877277" duration="15491000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28347000" />
+    <option name="totallyTimeSpent" value="29882000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1080" extended-state="6" />
@@ -465,13 +375,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -583,13 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projects/ng-simple-table/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projects/ng-simple-table/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -600,13 +496,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo-screen.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="138">
-            <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <first_editor relative-caret-position="345">
+            <caret line="24" column="96" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="96" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/ng-simple-table/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projects/ng-simple-table/src/LICENSE">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
         </state>
       </provider>
     </entry>
