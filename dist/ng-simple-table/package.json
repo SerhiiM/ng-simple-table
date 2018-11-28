@@ -1,12 +1,18 @@
 {
   "name": "ng-simple-table",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "This is a simple table with CRUD actions, pagination and sorting.",
   "keywords": [
     "Angular",
     "Table"
   ],
-  "license": "ISC",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "serhiimisnyk",
+      "email": "misnyk.sergei93@gmail.com"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "github.com/SerhiiM/ng-simple-table"

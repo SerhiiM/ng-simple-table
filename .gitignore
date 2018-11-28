@@ -34,7 +34,7 @@ yarn-error.log
 testem.log
 /typings
  .idea/workspace.xml
- 
+
 # System Files
 .DS_Store
 Thumbs.db
