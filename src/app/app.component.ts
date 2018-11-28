@@ -8,21 +8,24 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
     columns = [
+        {titleKey: '', withSorting: false, rowKey: '', withSelection: true},
         {titleKey: 'Manufacture Name', withSorting: true, rowKey: 'manufacturer_name'},
         {titleKey: 'Model Name', withSorting: true, rowKey: 'name'},
-        {titleKey: 'Action', withSorting: false, rowKey: '', withActionCol: true}
+        {titleKey: 'Action', withSorting: false, rowKey: '', withAction: true}
     ];
 
     list = [
         {
             id: 1,
             manufacturer_name: 'BMW',
-            name: 'GTX'
+            name: 'GTX',
+            checkbox_disabled: true
         },
         {
             id: 2,
             manufacturer_name: 'MAZDA',
-            name: 'IPD'
+            name: 'IPD',
+            checkbox_checked: true
         }
     ];
 
@@ -34,6 +37,8 @@ export class AppComponent {
         prevPage: 1,
         totalCount: 5
     };
+
+    pagination = false;
 
     startView(id) {
         console.log(id);
@@ -57,5 +62,9 @@ export class AppComponent {
 
     handleDelete(id) {
         console.log(id);
+    }
+
+    toggleCheckBox(item) {
+        console.log(item);
     }
 }

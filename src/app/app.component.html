@@ -1,14 +1,17 @@
-<h4 style="margin: 20px;">Cars table</h4>
+<h2 style="margin: 20px;">Cars table</h2>
 <smt-ng-simple-table
-  [columns]="columns"
-  [list]="list"
-  [meta]="meta"
-  (handleTurnPage)="turnPage($event)"
-  (handleView)="startView($event)"
-  (handleEdit)="startEditing($event)"
-  (handleDelete)="handleDelete($event)"
-  (handleSorting)="sortList($event)"
-  (handleChangeItemsPerPage)="changeItemsPerPage($event)"
+    [columns]="columns"
+    [list]="list"
+    [meta]="meta"
+    [pagination]="pagination"
+    (handleTurnPage)="turnPage($event)"
+    (handleView)="startView($event)"
+    (handleEdit)="startEditing($event)"
+    (handleDelete)="handleDelete($event)"
+    (handleSorting)="sortList($event)"
+    (handleChangeItemsPerPage)="changeItemsPerPage($event)"
+    (handleToggleCheckBox)="toggleCheckBox($event)"
 >
+    <div style="margin: 10px">{{meta?.currentPage}} / {{meta?.pagesCount}}</div>
 </smt-ng-simple-table>
 

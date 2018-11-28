@@ -1,12 +1,12 @@
-<div class="table-wrapper">
-  <table class="table">
+<div class="smt-table-wrapper">
+  <table class="smt-table">
     <thead>
     <tr>
       <th *ngFor="let column of columns" class="{{column.withSorting ? '':'no-sort'}}" width="{{column.width ? column.width:'auto'}}" [ngClass]="getColumnClass(column)">
         {{ column.titleKey }}
-        <div *ngIf="column.withSorting" class="sorting-btn-block">
-          <button class="btn btn-sm" (click)="sortColumn(column, 1)"><i class="fa fa-sort-up"></i></button>
-          <button class="btn btn-sm" (click)="sortColumn(column, 0)"><i class="fa fa-sort-down"></i></button>
+        <div *ngIf="column.withSorting" class="smt-sorting-btn-block">
+          <button class="btn" (click)="sortColumn(column, 1)"><i class="fa fa-sort-up"></i></button>
+          <button class="btn" (click)="sortColumn(column, 0)"><i class="fa fa-sort-down"></i></button>
         </div>
       </th>
     </tr>
@@ -15,13 +15,13 @@
     <tr *ngFor="let row of list">
       <td *ngFor="let column of columns">
         <div (click)="selectRow(row)">{{column.rowKey && row[column.rowKey]}}</div>
-        <div class="visible-md visible-lg no-wrap" *ngIf="column.withActionCol">
-          <button (click)="view(row)" class="btn btn-sm btn-green"><i class="fa fa-search"></i></button>
-          <button (click)="edit(row)" class="btn btn-sm btn-blue"><i class="fa fa-edit"></i></button>
-          <button (click)="delete(row)" *ngIf="!column.hideDeleteBtn" class="btn btn-sm btn-red"><i class="fa fa-trash"></i></button>
+        <div class="smt-btns-block" *ngIf="column.withAction">
+          <button (click)="view(row)" class="btn btn-sm btn-view"><i class="fa fa-search"></i></button>
+          <button (click)="edit(row)" class="btn btn-sm btn-edit"><i class="fa fa-edit"></i></button>
+          <button (click)="delete(row)" class="btn btn-sm btn-delete"><i class="fa fa-trash"></i></button>
         </div>
-        <div *ngIf="column.withSelectionCol">
-          <input type="checkbox" (change)="toggleCheckbox(row)" [disabled]="row.checkbox_disabled" [checked]="row.checkbox_checked"/>
+        <div *ngIf="column.withSelection">
+          <input class="smt-checkbox" type="checkbox" (change)="toggleCheckbox(row)" [disabled]="row.checkbox_disabled" [checked]="row.checkbox_checked"/>
         </div>
       </td>
     </tr>
@@ -29,30 +29,31 @@
   </table>
 </div>
 
-<div *ngIf="pagination" class="pagination-wrap">
-  <!--<div class="pagination-result">{{meta?.currentPage}} / {{meta?.pagesCount}}</div>-->
+<div *ngIf="pagination" class="smt-pagination-wrap">
   <div class="per-page-btns">
-    <button (click)="itemsPerPage(10)"  [class]="meta.perPage === 10 ? 'active': ''">10</button>
-    <button (click)="itemsPerPage(25)"  [class]="meta.perPage === 25 ? 'active': ''">25</button>
-    <button (click)="itemsPerPage(50)"  [class]="meta.perPage === 50 ? 'active': ''">50</button>
-    <button (click)="itemsPerPage(100)"  [class]="meta.perPage === 100 ? 'active': ''">100</button>
+    <button (click)="itemsPerPage(10)"  [class]="meta.perPage === 10 ? 'btn active': 'btn'">10</button>
+    <button (click)="itemsPerPage(25)"  [class]="meta.perPage === 25 ? 'btn active': 'btn'">25</button>
+    <button (click)="itemsPerPage(50)"  [class]="meta.perPage === 50 ? 'btn active': 'btn'">50</button>
+    <button (click)="itemsPerPage(100)"  [class]="meta.perPage === 100 ? 'btn active': 'btn'">100</button>
   </div>
-  <div class="paging_simple_numbers">
-    <ul class="pagination">
-      <button class="page-link" [disabled]="meta.currentPage === 1" (click)="turnPage((meta.currentPage - 1) * -1)"> ❮❮ </button>
-      <button class="page-link" [disabled]="meta.currentPage === 1" (click)="turnPage(-1)"><span class="pagination-default">❮</span></button>
-      <button class="page-link numbers" [disabled]="true"> {{meta.currentPage}} </button>
-      <button class="page-link" [disabled]="meta.currentPage === meta.pagesCount" (click)="turnPage(1)"><span class="pagination-default">❯</span></button>
-      <button class="page-link" [disabled]="meta.currentPage === meta.pagesCount" (click)="turnPage(meta.pagesCount - meta.currentPage)"> ❯❯ </button>
+  <div class="smt-paging-simple-numbers">
+    <ul class="smt-pagination">
+      <button class="btn page-link" [disabled]="meta.currentPage === 1" (click)="turnPage((meta.currentPage - 1) * -1)"> ❮❮ </button>
+      <button class="btn page-link" [disabled]="meta.currentPage === 1" (click)="turnPage(-1)"><span class="pagination-default">❮</span></button>
+      <button class="btn page-link numbers" [disabled]="true"> {{meta.currentPage}} </button>
+      <button class="btn page-link" [disabled]="meta.currentPage === meta.pagesCount" (click)="turnPage(1)"><span class="pagination-default">❯</span></button>
+      <button class="btn page-link" [disabled]="meta.currentPage === meta.pagesCount" (click)="turnPage(meta.pagesCount - meta.currentPage)"> ❯❯ </button>
     </ul>
   </div>
 </div>
 
+<ng-content></ng-content>
+
 <div *ngIf="showConformationModal">
-  <div class="overlay"></div>
-  <div class="choice-modal">
+  <div class="smt-overlay"></div>
+  <div class="smt-choice-modal">
     <p>Are you sure?</p>
-    <button class="btn-accept" (click)="this.handleDelete.emit(itemID_for_deleting); showConformationModal = false">Yes</button>
-    <button class="btn-cancel" (click)="itemID_for_deleting = null; showConformationModal = false">No</button>
+    <button class="btn btn-accept" (click)="this.handleDelete.emit(itemID_for_deleting); showConformationModal = false">Yes</button>
+    <button class="btn btn-cancel" (click)="itemID_for_deleting = null; showConformationModal = false">No</button>
   </div>
 </div>

@@ -1,14 +1,13 @@
 # ng-simple-table
 
-For now u have to install font-awesome and bootstrap
+For now u have to install font-awesome
 
-`npm install font-awesome bootstrap --save`
+`npm install font-awesome --save`
 
 Have to be included 
 
 `
-"node_modules/font-awesome/scss/font-awesome.scss",
-"node_modules/bootstrap/dist/css/bootstrap.css"
+"node_modules/font-awesome/scss/font-awesome.scss"
 `
 
 In root 
@@ -21,17 +20,25 @@ In template
 <smt-ng-simple-table></smt-ng-simple-table>
 ```
 
+Example
+
+![alt text](https://raw.githubusercontent.com/SerhiiM/ng-simple-table/master/src/demo-screen.png "Logo Title Text 1")
+
+
 Interfaces
 
 - Row : {
     titleKey: string,
     withSorting: boolean,
     rowKey: string,
-    withActionCol: boolean
+    withAction: boolean,
+    withSelection: boolean
 }
 
 - Item : {
     id: number,
+    checkbox_disabled: boolean,
+    checkbox_checked: boolean,
     ...
 }
 
@@ -55,7 +62,8 @@ Inputs (Properties)
  - columns (Row[])
  - list (Item[])
  - meta(Meta)
-
+ - pagination(boolean)
+ 
 Outputs (Events)
     
  - handleTurnPage - EventEmitter\<number>()
@@ -64,3 +72,4 @@ Outputs (Events)
  - handleDelete - EventEmitter\<number>()
  - handleSorting - EventEmitter\<SortItem>()
  - handleChangeItemsPerPage - EventEmitter\<number>()
+ - handleToggleCheckBox - EventEmitter\<Item>()

@@ -4,13 +4,13 @@ import { MetaData } from './interfaces';
 @Component({
   selector: 'smt-ng-simple-table',
   templateUrl: './ng-simple-table.component.html',
-  styleUrls: ['./ng-simple-table.component.scss', './buttons.scss']
+  styleUrls: ['./ng-simple-table.component.scss']
 })
 export class NgSimpleTableComponent implements OnInit {
 
   constructor() {}
 
-  private _show_pagination = true;
+  private _pagination = true;
   private _columns: any[] = [];
   private _list: any[] = [];
   private _sort: any[] = [];
@@ -24,9 +24,6 @@ export class NgSimpleTableComponent implements OnInit {
   };
   private _showConformationModal: boolean;
   itemID_for_deleting: any = null;
-
-  @Input()
-  paginationState: boolean;
 
   @Input()
   set columns(columns: any[]) {
@@ -50,7 +47,7 @@ export class NgSimpleTableComponent implements OnInit {
     return this._list;
   }
 
-  @Input('meta')
+  @Input()
   set meta(meta: MetaData) {
     if (meta) {
       this._meta = meta;
@@ -61,12 +58,13 @@ export class NgSimpleTableComponent implements OnInit {
     return this._meta;
   }
 
-  set pagination(value) {
-    this._show_pagination = value;
+  @Input()
+  set pagination(value: boolean) {
+    this._pagination = value;
   }
 
   get pagination() {
-    return this._show_pagination;
+    return this._pagination;
   }
 
   @Output()
@@ -84,7 +82,7 @@ export class NgSimpleTableComponent implements OnInit {
   @Output()
   handleToggleCheckBox = new EventEmitter<any>();
   @Output()
-  handleChangeItemsPerPage = new EventEmitter<any>();
+  handleChangeItemsPerPage = new EventEmitter<number>();
 
   set sort(sort: any[]) {
     if (sort && Array.isArray(sort)) {
@@ -105,9 +103,6 @@ export class NgSimpleTableComponent implements OnInit {
   }
 
   ngOnInit() {
-    if (this.paginationState === false) {
-      this.pagination = false;
-    }
   }
 
   view(row) {
@@ -162,6 +157,7 @@ export class NgSimpleTableComponent implements OnInit {
   itemsPerPage(count) {
     this.handleChangeItemsPerPage.emit(count);
   }
+
   getColumnClass(column) {
     const item = this.sort.find(
       i => i.field === column.sortKey || i.field === column.rowKey

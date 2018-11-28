@@ -1,166 +1,43 @@
-//  Default Colour Settings
-$primary: #007AFF;
-$lightPrimary: lighten($primary, 10%);
-$darkPrimary: darken($primary, 10%);
-$success: #5cb85c;
-$info: #46b8da;
-$warning: #eea236;
-$danger: #d43f3a;
-// Red
-$red: #C82E29;
-$lightRed: lighten($red, 10%);
-$darkRed: darken($red, 10%);
-// Orange
-$orange: #FF6600;
-$lightOrange: lighten($orange, 10%);
-$darkOrange: darken($orange, 10%);
-// Green
-$green: #1FBBA6;
-$lightGreen: lighten($green, 10%);
-$darkGreen: darken($green, 10%);
-// Blue
-$blue: #5F8295;
-$lightBlue: lighten($blue, 10%);
-$darkBlue: darken($blue, 10%);
-// Pink
-$pink: #DD5A82;
-$lightPink: lighten($pink, 10%);
-$darkPink: darken($pink, 10%);
-// Purple
-$purple: #804C75;
-$lightPurple: lighten($purple, 10%);
-$darkPurple: darken($purple, 10%);
-// Azure
-$azure: #0095C8;
-$lightAzure: lighten($azure, 5%);
-$darkAzure: darken($azure, 10%);
-// Beige
-$beige: #D2BD8E;
-$lightBeige: lighten($beige, 5%);
-$darkBeige: darken($beige, 10%);
-// Grey
+$red : #b32925;
+$blue : #007bff;
+$green : #1FBBA6;
+$white: #fff;
 $grey: #c8c7cc;
-$lightGrey: lighten($grey, 18%);
-$darkGrey: darken($grey, 10%);
-// Yellow
-$yellow: #FFB848;
-$lightYellow: lighten($yellow, 10%);
-$darkYellow: darken($yellow, 10%);
-// Bricky
-$bricky: #894550;
-$lightBricky: lighten($bricky, 10%);
-$darkBricky: darken($bricky, 10%);
 
-$black: #2C2F3B; // Black
-$white: #ffffff; // White
-
-$border-default: #c8c7cc !default;
-
-$text-color: #8e8e93 !default;
-$text-dark: darken($text-color, 20%) !default;
-$text-light: lighten($text-color, 20%) !default;
-$link-color: $primary !default;
-
-$font-family-primary: "Raleway", sans-serif !default;
-$font-family-secondary: "Lato", sans-serif !default;
-$font-family-default: Helvetica, Arial, sans-serif !default;
-
-$font-size-base: 13px !default;
-$font-size-normal: 14px !default;
-$font-size-large: floor(($font-size-base * 1.25)) !default; // ~15px
-$font-size-extra-large: floor(($font-size-base * 1.35)) !default; // ~17px
-$font-size-small: ceil(($font-size-base * 0.85)) !default; // ~12px
-$font-size-extra-small: floor(($font-size-base * 0.85)) !default; // ~11px
-
-$h1-size-base: 36px !default;
-$h1-size-extra-large: floor(($h1-size-base * 1.40)) !default; // ~50px
-
-$header-height: 65px;
-$mobile-header-height: 50px;
-$sideBar-width: 260px;
-$sideBar-closed-width: 70px;
-$footer-height: 50px;
-$horizontal-menu-height: 40px;
-
-
-//  breakpoints
-
-// Extra small screen / phone
-$screen-xs-min: 480px !default;
-
-// Small screen / tablet
-$screen-sm-min: 768px !default;
-
-// Medium screen / desktop
-$screen-md-min: 992px !default;
-
-// Large screen / wide desktop
-$screen-lg-min: 1200px !default;
-
-// So media queries don't overlap when required, provide a maximum
-$screen-xs-max: ($screen-sm-min - 1) !default;
-$screen-sm-max: ($screen-md-min - 1) !default;
-$screen-md-max: ($screen-lg-min - 1) !default;
-
-input.form-control,
-button.form-control,
-.btn.form-control,
-.custom-file,
-.custom-file-input,
-.custom-file-label {
-  height: 34px;
+.smt-checkbox{
+  width: 15px;
 }
 
-.btn {
-  line-height: 1.45;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-
-.modal-content {
-  background: #fff;
-}
-
-.table-responsive {
-  background-color: #222932 !important;
-}
-
-.btn {
-  margin: 0 .15rem;
+.smt-table-responsive {
+  background-color: #222932 ;
 }
 
 /* Sort heading of table */
 
-.table > thead:first-child > tr:first-child > th {
-  padding: 12px 8px 12px 8px;
-  border-top: 1px solid #e2e2e4;
-  border-left: 1px solid #e2e2e4;
+.smt-table {
+  width: 100%;
 }
 
-.table > thead:first-child > tr:first-child > th:last-child {
-  border-right: 1px solid #e2e2e4;
+.smt-table {
+  border-collapse: collapse;
+
+  th, td {
+    padding: 12px 8px 12px 8px;
+    border: 1px solid #e2e2e4;
+  }
 }
 
-.table > tbody > tr > td {
-  border-right: 1px solid #e2e2e4;
-}
-
-.table > tbody > tr > td:first-child {
-  border-left: 1px solid #e2e2e4;
-}
-
-.sorting-btn-block {
+.smt-sorting-btn-block {
   display: inline-flex;
   float: right;
 }
 
-.sorting-btn-block button {
+.smt-sorting-btn-block button {
   background: none;
   padding: 0;
   margin: 0;
-
   border: none;
-
+  cursor: pointer;
   i {
     font-size: 12px;
   }
@@ -174,188 +51,107 @@ button.form-control,
   content: "\2193";
 }
 
-/* Pagination fixes */
+/* Pagination */
 
-.pagination-wrap {
+.smt-pagination-wrap {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1rem;
+  margin-top: 1em;
 }
 
-.pagination-result {
-  float: left;
+.per-page-btns button{
+  background: $white;
+  border-color: $grey;
+  color: $blue;
+
+  &:hover{
+    background-color: darken($white, 5%) ;
+  }
+
+  &.active{
+    background: $blue;
+    border-color: $blue;
+    color: $white;
+
+    &:hover{
+      background-color: darken($blue, 5%) ;
+    }
+  }
 }
 
-.dataTables_paginate {
-  float: right;
-}
-
-.pagination {
+.smt-pagination {
   margin: 0;
   padding: 0 3px 3px 0;
 }
 
-.pagination button {
+.smt-pagination button {
   padding: 5px 10px;
   border-radius: 5px;
   margin-left: 5px;
 }
 
-.pagination .numbers {
+.smt-pagination .page-link:not(.numbers){
+  background: $white;
+  border-color: $grey;
+  color: $blue;
+
+  &:hover{
+    background-color: darken($white, 5%) ;
+  }
+
+  &:disabled{
+    background: lighten($grey,25%);
+    border-color: $grey;
+    color: $grey;
+    cursor: not-allowed;
+  }
+}
+
+.smt-pagination .numbers {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff;
 }
 
-/* monitoring tools fixes */
-
-.panel.group-el {
-  margin-bottom: 0;
-}
-
-.panel.group-el .panel-body {
-  padding: 5px 15px 8px;
-}
-
-.panel.group-el:first-child {
-  margin-top: 20px;
-}
-
-.panel.group-el:last-child {
-  margin-bottom: 20px;
-}
-
-.panel-heading.group-el-heading {
-  min-height: 25px;
-  padding: 0;
-}
-
-.panel-tools {
-  right: 3px;
-}
-
-.panel-tools.toggler-btn {
-  top: 2px;
-  right: 0;
-}
-
-.panel-tools.toggler-btn a {
-  margin: 0;
-  padding: .375rem 0;
-}
-
-.group-el .checkbox-inline {
-  width: 100%;
-  margin: 3px 0 !important;
-}
-
-/* sidebar table */
-
-table.sidebar-table {
-  margin: 0;
-
-  > thead > tr > th,
-  > tbody > tr > td {
-    background-color: #343a40 !important;
-    color: #fff !important;
-    padding: 0 4px !important;
-    border-color: #858585;
-  }
-
-  > tbody > tr {
-    td {
-      &:first-child {
-        padding: 0 2px !important;
-      }
-    }
-  }
-
-  &.table-hover tbody tr:hover,
-  &.table-hover > tbody > tr:hover > td,
-  &.table-hover > tbody > tr:hover > th {
-    background-color: mix(#343a40, #fff, 90%) !important;
-  }
-
-  tbody tr,
-  > tbody > tr {
-    &.selected {
-      &,
-      td {
-        background-color: #3d4a5b !important;
-      }
-    }
-
-    &.highlighted {
-      &,
-      td {
-        background-color: #3f543f !important;
-      }
-    }
-  }
-}
-
-.map-modal-content {
-  position: relative;
-  width: 100%;
-  padding-top: 35px;
-  padding-left: 20px;
-  z-index: 10;
-}
-
-.modal-content {
-  position: relative;
-  background: #364150 !important;
-  padding: 0 0 25px;
-  border: none;
-  text-align: center;
-  z-index: 10;
-}
-
-.modal-content p {
-  font-size: 16px;
-  color: #fff;
-}
+/* Modal */
 
 .btn-accept {
-  background-color: #1FBBA6 !important;
+  background-color: #1FBBA6 ;
   border-color: #1FBBA6;
 }
 
 .btn-cancel {
-  background-color: #b6b6b6 !important;
-  border-color: #b6b6b6;
+  background-color: #b32925 ;
+  border-color: #b32925;
 }
 
-.choice-modal {
+.smt-choice-modal {
   text-align: center;
   position: fixed;
   background: white;
   padding: 20px;
-  margin-left: 50%;
+  left: 50%;
+  top: 50%;
   border-radius: 5px;
-  transform: translate(-50%);
+  transform: translate(-50%,-50%);
 }
 
-.choice-modal button {
+.smt-choice-modal button {
   color: #fff;
   border: none;
   outline: none;
   margin: 0 10px;
   padding: 5px 15px;
   border-radius: 4px;
-  cursor: pointer;
 }
 
-.choice-modal .btn-cancel {
-  background-color: #b32925 !important;
-}
-
-.choice-modal p {
+.smt-choice-modal p {
   font-size: 18px;
 }
 
-.overlay {
+.smt-overlay {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -363,4 +159,120 @@ table.sidebar-table {
   left: 0;
   background: rgba(54, 65, 80, 0.8);
   color: #fff;
+}
+
+/* Buttons */
+
+.btn {
+  line-height: 1.45;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0 .15rem;
+  cursor: pointer;
+  transition: .3s;
+  background-image: none;
+  box-shadow: none;
+  outline: 0;
+  font-size: .875rem;
+  padding: .25rem .5rem;
+  border-radius: .2rem;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+}
+
+.btn:hover, .btn:focus, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {
+  box-shadow: none;
+  outline: none;
+}
+
+.btn-view {
+  background-color: $green;
+  border-color: $green;
+  color: $white;
+
+  &:hover {
+    background-color: lighten($green,10%) ;
+    border-color: lighten($green,10%);
+    color: $white;
+  }
+
+  &:active, &.active, &.active:focus, &:active:focus, &:active:hover, &.dropdown-toggle:active:hover {
+    background-color: darken($green,5%) ;
+    border-color: darken($green,5%);
+  }
+
+  &:focus {
+    background-color: lighten($green,15%);
+    border-color: lighten($green,15%);
+    color: $white;
+  }
+
+  &.disabled:hover, &.disabled:focus, &.disabled:active, &.disabled.active, &[disabled], &[disabled]:hover, &[disabled]:focus, &[disabled]:active, &[disabled].active, fieldset[disabled] &:hover, fieldset[disabled] &:focus, fieldset[disabled] &:active, fieldset[disabled] &.active {
+    background-color: lighten($green,20%);
+    border-color: lighten($green,20%);
+    color: $white;
+  }
+}
+
+.btn-edit {
+  background-color: $blue;
+  border-color: $blue;
+  color: $white;
+
+  &:hover {
+    background-color: lighten($blue,10%) ;
+    border-color: lighten($blue,10%);
+    color: $white;
+  }
+
+  &:active, &.active, &.active:focus, &:active:focus, &:active:hover, &.dropdown-toggle:active:hover {
+    background-color: darken($blue,5%) ;
+    border-color: darken($blue,5%);
+  }
+
+  &:focus {
+    background-color: lighten($blue,15%);
+    border-color: lighten($blue,15%);
+    color: $white;
+  }
+
+  &.disabled:hover, &.disabled:focus, &.disabled:active, &.disabled.active, &[disabled], &[disabled]:hover, &[disabled]:focus, &[disabled]:active, &[disabled].active, fieldset[disabled] &:hover, fieldset[disabled] &:focus, fieldset[disabled] &:active, fieldset[disabled] &.active {
+    background-color: lighten($blue,20%);
+    border-color: lighten($blue,20%);
+    color: $white;
+  }
+}
+
+.btn-delete {
+  background-color: $red;
+  border-color: $red;
+  color: $white;
+
+  &:hover {
+    background-color: lighten($red,10%) ;
+    border-color: lighten($red,10%);
+    color: $white;
+  }
+
+  &:active, &.active, &.active:focus, &:active:focus, &:active:hover, &.dropdown-toggle:active:hover {
+    background-color: darken($red,5%) ;
+    border-color: darken($red,5%);
+  }
+
+  &:focus {
+    background-color: lighten($red,15%);
+    border-color: lighten($red,15%);
+    color: $white;
+  }
+
+  &.disabled:hover, &.disabled:focus, &.disabled:active, &.disabled.active, &[disabled], &[disabled]:hover, &[disabled]:focus, &[disabled]:active, &[disabled].active, fieldset[disabled] &:hover, fieldset[disabled] &:focus, fieldset[disabled] &:active, fieldset[disabled] &.active {
+    background-color: lighten($red,20%);
+    border-color: lighten($red,20%);
+    color: $white;
+  }
 }

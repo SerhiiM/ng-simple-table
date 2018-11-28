@@ -2,14 +2,13 @@ import { OnInit, EventEmitter } from '@angular/core';
 import { MetaData } from './interfaces';
 export declare class NgSimpleTableComponent implements OnInit {
     constructor();
-    private _show_pagination;
+    private _pagination;
     private _columns;
     private _list;
     private _sort;
     private _meta;
     private _showConformationModal;
     itemID_for_deleting: any;
-    paginationState: boolean;
     columns: any[];
     list: any[];
     meta: MetaData;
@@ -21,7 +20,7 @@ export declare class NgSimpleTableComponent implements OnInit {
     handleTurnPage: EventEmitter<any>;
     handleSelectRow: EventEmitter<any>;
     handleToggleCheckBox: EventEmitter<any>;
-    handleChangeItemsPerPage: EventEmitter<any>;
+    handleChangeItemsPerPage: EventEmitter<number>;
     sort: any[];
     showConformationModal: any;
     ngOnInit(): void;
